@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLimitMVC.Common", "User
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLimitMVC.BLL", "UserLimitMVC.BLL\UserLimitMVC.BLL.csproj", "{A069570E-CE72-48CF-8CFC-6BA7EFB276EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLimitMVC.IDAL", "UserLimitMVC.IDAL\UserLimitMVC.IDAL.csproj", "{D6E3052B-C68A-476E-9EC2-96F822609F4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A069570E-CE72-48CF-8CFC-6BA7EFB276EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A069570E-CE72-48CF-8CFC-6BA7EFB276EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A069570E-CE72-48CF-8CFC-6BA7EFB276EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E3052B-C68A-476E-9EC2-96F822609F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E3052B-C68A-476E-9EC2-96F822609F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E3052B-C68A-476E-9EC2-96F822609F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E3052B-C68A-476E-9EC2-96F822609F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

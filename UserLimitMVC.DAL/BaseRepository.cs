@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using UserLimitMVC.Model;
 using UserLimitMVC.Model.User;
 using System.Data.Entity;
+using UserLimitMVC.IDAL;
 
 namespace UserLimitMVC.DAL
 {
     /// <summary>
     /// 实现对数据库的增删改查的基类
     /// </summary>
-    public abstract class BaseRepository<T> where T : class
+    public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         //创建EF上下文
         private UserLimitContext db = new UserLimitContext();

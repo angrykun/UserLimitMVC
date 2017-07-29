@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using UserLimitMVC.Model;
 using UserLimitMVC.Model.User;
+using UserLimitMVC.IDAL;
 
 namespace UserLimitMVC.DAL
 {
-    public class UserInfoRepository : BaseRepository<Role>
+    /// <summary>
+    /// UserInfo仓储类
+    /// </summary>
+    public class UserInfoRepository : BaseRepository<UserInfo>, IUserInfoRepository
     {
     }
 }

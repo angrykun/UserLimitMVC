@@ -5,14 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UserLimitMVC.Model;
 using UserLimitMVC.Model.User;
-using UserLimitMVC.IDAL;
 
-namespace UserLimitMVC.DAL
+namespace UserLimitMVC.IDAL
 {
-    /// <summary>
-    /// Role仓储类
-    /// </summary>
-    public class RoleRepository : BaseRepository<Role>, IRoleRepository
+    public interface IRoleRepository : IBaseRepository<Role>
     {
     }
 }
