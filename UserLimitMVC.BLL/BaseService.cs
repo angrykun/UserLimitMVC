@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserLimitMVC.IBLL;
+using UserLimitMVC.DAL;
 
 namespace UserLimitMVC.BLL
 {
     public abstract class BaseService<T> : IBaseService<T> where T : class, new()
     {
+        //当前仓储
         public IDAL.IBaseRepository<T> CurrentRepository { get; set; }
+
+        //DbSession存放
+        public DbSession _DbSession = new DbSession();
 
         public BaseService()
         {
@@ -21,17 +26,22 @@ namespace UserLimitMVC.BLL
         public T AddEntity(T entity)
         {
             //调用T对应的仓储来添加工作
-            return CurrentRepository.AddEntity(entity);
+            var AddEntity = CurrentRepository.AddEntity(entity);
+            _DbSession.SaveChanges();
+            return AddEntity;
         }
 
         public bool UpdateEntity(T entity)
         {
-            return CurrentRepository.UpdateEntity(entity);
+            CurrentRepository.UpdateEntity(entity);
+            return _DbSession.SaveChanges() > 0;
         }
 
         public bool DeleteEntity(T entity)
         {
-            return CurrentRepository.DeleteEntity(entity);
+            CurrentRepository.DeleteEntity(entity);
+
+            return _DbSession.SaveChanges() > 0;
         }
 
         /// <summary>
