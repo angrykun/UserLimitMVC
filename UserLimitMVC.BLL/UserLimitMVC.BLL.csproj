@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>a069570e-ce72-48cf-8cfc-6ba7efb276ee</ProjectGuid>
+    <ProjectGuid>{A069570E-CE72-48CF-8CFC-6BA7EFB276EE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UserLimitMVC.BLL</RootNamespace>
@@ -30,24 +30,38 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleService.cs" />
+    <Compile Include="UserInfoService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserLimitMVC.DAL\UserLimitMVC.DAL.csproj">
+      <Project>{b7a28da6-7b62-453e-87fb-abf5b3aba548}</Project>
+      <Name>UserLimitMVC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserLimitMVC.IBLL\UserLimitMVC.IBLL.csproj">
+      <Project>{4bab507d-9424-4e4b-a8eb-c0a64ce6a748}</Project>
+      <Name>UserLimitMVC.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserLimitMVC.IDAL\UserLimitMVC.IDAL.csproj">
+      <Project>{d6e3052b-c68a-476e-9ec2-96f822609f4a}</Project>
+      <Name>UserLimitMVC.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserLimitMVC.Model\UserLimitMVC.Model.csproj">
+      <Project>{4e5a93e1-a876-46e5-8904-c628f7b65dd8}</Project>
+      <Name>UserLimitMVC.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -57,5 +71,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>

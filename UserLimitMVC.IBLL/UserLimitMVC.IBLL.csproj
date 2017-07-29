@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B7A28DA6-7B62-453E-87FB-ABF5B3ABA548}</ProjectGuid>
+    <ProjectGuid>{4BAB507D-9424-4E4B-A8EB-C0A64CE6A748}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UserLimitMVC.DAL</RootNamespace>
-    <AssemblyName>UserLimitMVC.DAL</AssemblyName>
+    <RootNamespace>UserLimitMVC.IBLL</RootNamespace>
+    <AssemblyName>UserLimitMVC.IBLL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,16 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,25 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseRepository.cs" />
+    <Compile Include="IBaseService.cs" />
+    <Compile Include="IRoleService.cs" />
+    <Compile Include="IUserInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryFactory.cs" />
-    <Compile Include="RoleRepository.cs" />
-    <Compile Include="UserInfoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UserLimitMVC.IDAL\UserLimitMVC.IDAL.csproj">
-      <Project>{d6e3052b-c68a-476e-9ec2-96f822609f4a}</Project>
-      <Name>UserLimitMVC.IDAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UserLimitMVC.Model\UserLimitMVC.Model.csproj">
       <Project>{4e5a93e1-a876-46e5-8904-c628f7b65dd8}</Project>
       <Name>UserLimitMVC.Model</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
