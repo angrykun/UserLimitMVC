@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>实现用户的增删改查</title>
+    @* easyui 样式  *@
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    @* JQeury，EasyUI 引用 *@
+    <script src="~/Scripts/jquery-1.11.3.js"></script>
+    <script src="~/Scripts/jquery.easyui-1.4.5.js"></script>
+    <script src="~/Scripts/locale/easyui-lang-zh_CN.js"></script>
+</head>
+<body>
+    <div>
+        @* EasyUI 的DataGrid 控件 *@
+        <table id="test" style="width:700px" title="用户操作" iconcls="icon-edit"></table>
+    </div>
+    <script>
+        $(function () {
+            //页面刷新时执行事件
+            initTable();
+        });
+
+        //对DataGrid 控件的绑定操作
+        function initTable() {
+            $("#test").datagrid({
+                url: '/UserInfo/GetAllUserInfos',
+                title: '用户的展示',
+                iconCls: 'icon-save',
+                width: 500,
+                height: 350,
+                nowrap: true,
+                autoRowHeight: false,
+                striped: true,
+                collapsible: true,
+                pagination: true,
+                rownumbers: true,
+                sortName: 'ID',
+                sortOrder: 'desc',
+                remoteSort: false,
+                idField: 'ID',
+                frozenColumns: [[
+                    { field: 'ck', checkbox: true },
+                    { title: '主键', field: 'ID', width: 80, sortable: true },
+                    { title: '用户名', field: 'UName', width: 120, sortable: true },
+                    { title: '密码', field: 'Pwd', width: 100, sortable: true }
+                ]],
+                toolbar: [{
+                    id: 'btnadd',
+                    text: '添加',
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        $('#btnsave').linkbutton('enable');
+                    }
+                }, {
+                    id: 'btncut',
+                    text: '修改',
+                    iconCls: 'icon-cut',
+                    handler: function () {
+                        $('#btncut').linkbutton('enable');
+                    }
+                }, '-', {
+                    id: '删除',
+                    text: 'Save',
+                    iconCls: 'icon-cancel',
+                }]
+            });
+        }
+    </script>
+</body>
+</html>

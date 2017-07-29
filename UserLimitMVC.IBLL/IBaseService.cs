@@ -46,8 +46,6 @@ namespace UserLimitMVC.IBLL
 
         /// <returns></returns>
 
-        IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda,
-
-                                        bool isAsc, Func<T, S> orderByLambda);
+        IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, bool isAsc, Func<T, S> orderByLambda);
     }
 }

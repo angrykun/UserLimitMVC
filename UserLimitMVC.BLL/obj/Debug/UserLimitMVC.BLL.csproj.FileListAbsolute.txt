@@ -1,0 +1,16 @@
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.csprojResolveAssemblyReference.cache
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.BLL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.BLL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.DAL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.IBLL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.IDAL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.Model.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\EntityFramework.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.DAL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.IBLL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.IDAL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\UserLimitMVC.Model.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\EntityFramework.xml
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.pdb

@@ -6,6 +6,6 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.SqlServe
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.xml
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
-D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.csprojResolveAssemblyReference.cache
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

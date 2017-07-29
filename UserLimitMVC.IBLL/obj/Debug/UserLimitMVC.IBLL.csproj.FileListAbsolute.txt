@@ -1,0 +1,10 @@
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\UserLimitMVC.IBLL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\UserLimitMVC.IBLL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\UserLimitMVC.Model.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\EntityFramework.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\UserLimitMVC.Model.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\EntityFramework.xml
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.csprojResolveAssemblyReference.cache
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.pdb

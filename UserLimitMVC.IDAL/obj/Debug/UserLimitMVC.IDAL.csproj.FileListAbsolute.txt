@@ -1,0 +1,14 @@
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\UserLimitMVC.IDAL.dll.config
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\UserLimitMVC.IDAL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\UserLimitMVC.IDAL.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\EntityFramework.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\UserLimitMVC.Model.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\UserLimitMVC.Model.pdb
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\EntityFramework.xml
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.csprojResolveAssemblyReference.cache
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.pdb
