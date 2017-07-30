@@ -17,19 +17,19 @@
 <body style="width:500px;margin:120px auto auto auto;background-color:#f2f2f2;">
     <div class="easyui-panel" title="登录" style="width:400px;padding:30px 70px 20px 70px">
         <div style="margin-bottom:10px">
-            <input class="easyui-textbox" style="width:100%;height:40px;padding:12px" data-options="prompt:'用户名',iconCls:'icon-man',iconWidth:38">
+            <input id="UName" class="easyui-textbox" style="width:100%;height:40px;padding:12px" data-options="prompt:'用户名',iconCls:'icon-man',iconWidth:38">
         </div>
         <div style="margin-bottom:10px">
-            <input class="easyui-textbox" type="password" style="width:100%;height:40px;padding:12px" data-options="prompt:'密码',iconCls:'icon-lock',iconWidth:38">
+            <input id="Pwd" class="easyui-textbox" type="password" style="width:100%;height:40px;padding:12px" data-options="prompt:'密码',iconCls:'icon-lock',iconWidth:38">
         </div>
         <div style="margin-bottom:20px">
-            <input class="easyui-textbox" style="width:58%;height:40px;padding:12px" data-options="prompt:'验证码',iconWidth:38">
+            <input id="Code" class="easyui-textbox" style="width:58%;height:40px;padding:12px" data-options="prompt:'验证码',iconWidth:38">
             <a id="changeCode" href="javascript:void(0);" title="看不清，换一张">
                 <img id="imgCode" src="/Login/CheckCode?ID=1" style="height: 38px; vertical-align: middle;line-height:38px;" alt="验证码" />
             </a>
         </div>
         <div>
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="padding:5px 0px;width:100%;">
+            <a id="login" href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="padding:5px 0px;width:100%;">
                 <span style="font-size:14px;">登录</span>
             </a>
         </div>
@@ -41,6 +41,24 @@
                 var code = $('#imgCode').attr("src");
                 $('#imgCode').prop("src", code + "1");
 
+            });
+            //登录
+            $("#login").on("click", function () {
+
+                var postData = {
+                    UName: $("#UName").val(),
+                    Pwd: $("#Pwd").val(),
+                    Code: $("#Code").val()
+                };
+
+                $.post("/Login/CheckUserInfo", postData, function (data) {
+                    if (data == "OK") {
+                        window.location.href = "/Home/Index";
+                    } else {
+                        alert(data);
+                        window.location.href = "/Login/Index";
+                    }
+                });
             });
         });
     </script>

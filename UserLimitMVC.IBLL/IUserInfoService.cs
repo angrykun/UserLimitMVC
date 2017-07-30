@@ -10,5 +10,7 @@ namespace UserLimitMVC.IBLL
 {
     public interface IUserInfoService : IBaseService<UserInfo>
     {
+        //添加一个用户登录信息约束
+        UserInfo CheckUserInfo(UserInfo userInfo);
     }
 }

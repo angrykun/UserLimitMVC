@@ -21,5 +21,11 @@ namespace UserLimitMVC.BLL
             //设置当前仓储为UserInfo仓储
             CurrentRepository = DAL.RepositoryFactory.UserRepository;
         }
+
+        //校验用户
+        public UserInfo CheckUserInfo(UserInfo userINfo)
+        {
+            return _DbSession.UserInfoRepository.LoadEntities(u => u.UName == userINfo.UName && u.Pwd == userINfo.Pwd).FirstOrDefault();
+        }
     }
 }
