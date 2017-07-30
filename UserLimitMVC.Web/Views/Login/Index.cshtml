@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登录</title>
+    <link href="~/Content/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.11.3.js"></script>
+    <script src="~/Scripts/jquery.easyui-1.4.5.js"></script>
+    <script src="~/Scripts/locale/easyui-lang-zh_CN.js"></script>
+</head>
+<body style="width:500px;margin:120px auto auto auto;background-color:#f2f2f2;">
+    <div class="easyui-panel" title="登录" style="width:400px;padding:30px 70px 20px 70px">
+        <div style="margin-bottom:10px">
+            <input class="easyui-textbox" style="width:100%;height:40px;padding:12px" data-options="prompt:'用户名',iconCls:'icon-man',iconWidth:38">
+        </div>
+        <div style="margin-bottom:10px">
+            <input class="easyui-textbox" type="password" style="width:100%;height:40px;padding:12px" data-options="prompt:'密码',iconCls:'icon-lock',iconWidth:38">
+        </div>
+        <div style="margin-bottom:20px">
+            <input class="easyui-textbox" style="width:58%;height:40px;padding:12px" data-options="prompt:'验证码',iconWidth:38">
+            <a id="changeCode" href="javascript:void(0);" title="看不清，换一张">
+                <img id="imgCode" src="/Login/CheckCode?ID=1" style="height: 38px; vertical-align: middle;line-height:38px;" alt="验证码" />
+            </a>
+        </div>
+        <div>
+            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-ok'" style="padding:5px 0px;width:100%;">
+                <span style="font-size:14px;">登录</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            //切换验证码
+            $("#changeCode").on("click", function () {
+                var code = $('#imgCode').attr("src");
+                $('#imgCode').prop("src", code + "1");
+
+            });
+        });
+    </script>
+</body>
+</html>

@@ -461,6 +461,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UserInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -472,6 +473,7 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.11.3.min.map" />
     <Content Include="Views\UserInfo\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -487,6 +489,10 @@
     <ProjectReference Include="..\UserLimitMVC.BLL\UserLimitMVC.BLL.csproj">
       <Project>{a069570e-ce72-48cf-8cfc-6ba7efb276ee}</Project>
       <Name>UserLimitMVC.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserLimitMVC.Common\UserLimitMVC.Common.csproj">
+      <Project>{7a5a3447-c096-48dd-8a9f-b4b7c2395e8f}</Project>
+      <Name>UserLimitMVC.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserLimitMVC.IBLL\UserLimitMVC.IBLL.csproj">
       <Project>{4bab507d-9424-4e4b-a8eb-c0a64ce6a748}</Project>

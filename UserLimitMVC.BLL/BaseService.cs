@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UserLimitMVC.IBLL;
 using UserLimitMVC.DAL;
+using System.Linq.Expressions;
 
 namespace UserLimitMVC.BLL
 {
@@ -49,7 +50,7 @@ namespace UserLimitMVC.BLL
         /// </summary>
         /// <param name="whereLambda"></param>
         /// <returns></returns>
-        public IQueryable<T> LoadEntities(Func<T, bool> whereLambda)
+        public IQueryable<T> LoadEntities(Expression<Func<T, bool>> whereLambda)
         {
             return CurrentRepository.LoadEntities(whereLambda);
         }
@@ -65,7 +66,7 @@ namespace UserLimitMVC.BLL
         /// <param name="isAsc"></param>
         /// <param name="orderByLambda"></param>
         /// <returns></returns>
-        public IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, bool isAsc, Func<T, S> orderByLambda)
+        public IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Expression<Func<T, bool>> whereLambda, bool isAsc, Expression<Func<T, S>> orderByLambda)
         {
             return CurrentRepository.LoadPageEntities(pageIndex, pageSize, out total, whereLambda, isAsc, orderByLambda);
         }

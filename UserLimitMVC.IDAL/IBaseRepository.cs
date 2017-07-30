@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.Linq.Expressions;
 
 namespace UserLimitMVC.IDAL
 {
@@ -35,7 +36,7 @@ namespace UserLimitMVC.IDAL
         /// </summary>
         /// <param name="whereLambda"></param>
         /// <returns></returns>
-        IQueryable<T> LoadEntities(Func<T, bool> whereLambda);
+        IQueryable<T> LoadEntities(Expression<Func<T, bool>> whereLambda);
 
         /// <summary>
         /// 分页查数据
@@ -48,6 +49,6 @@ namespace UserLimitMVC.IDAL
         /// <param name="isAsc"></param>
         /// <param name="orderByLambda"></param>
         /// <returns></returns>
-        IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, bool isAsc, Func<T, S> orderByLambda);
+        IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Expression<Func<T, bool>> whereLambda, bool isAsc, Expression<Func<T, S>> orderByLambda);
     }
 }

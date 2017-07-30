@@ -50,3 +50,5 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\UserLimitMVC.IDAL.pdb
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\UserLimitMVC.DAL.pdb
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\EntityFramework.xml
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\zh-Hans\EntityFramework.resources.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\UserLimitMVC.Common.dll
+D:\ProjectGit\UserLimitMVC\UserLimitMVC.Web\bin\UserLimitMVC.Common.pdb

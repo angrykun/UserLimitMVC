@@ -7,6 +7,7 @@ using UserLimitMVC.Model;
 using UserLimitMVC.Model.User;
 using System.Data.Entity;
 using UserLimitMVC.IDAL;
+using System.Linq.Expressions;
 
 namespace UserLimitMVC.DAL
 {
@@ -62,7 +63,7 @@ namespace UserLimitMVC.DAL
         /// </summary>
         /// <param name="whereLambda"></param>
         /// <returns></returns>
-        public IQueryable<T> LoadEntities(Func<T, bool> whereLambda)
+        public IQueryable<T> LoadEntities(Expression<Func<T, bool>> whereLambda)
         {
             return db.Set<T>().Where<T>(whereLambda).AsQueryable();
         }
@@ -78,7 +79,7 @@ namespace UserLimitMVC.DAL
         /// <param name="isAsc"></param>
         /// <param name="orderByLambda"></param>
         /// <returns></returns>
-        public IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, bool isAsc, Func<T, S> orderByLambda)
+        public IQueryable<T> LoadPageEntities<S>(int pageIndex, int pageSize, out int total, Expression<Func<T, bool>> whereLambda, bool isAsc, Expression<Func<T, S>> orderByLambda)
         {
             var temp = db.Set<T>().Where<T>(whereLambda);
             total = temp.Count();//得到总条数
