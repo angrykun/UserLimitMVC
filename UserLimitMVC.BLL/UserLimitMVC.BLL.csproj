@@ -46,6 +46,10 @@
     <Compile Include="UserInfoService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UserLimitMVC.Common\UserLimitMVC.Common.csproj">
+      <Project>{7a5a3447-c096-48dd-8a9f-b4b7c2395e8f}</Project>
+      <Name>UserLimitMVC.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserLimitMVC.DAL\UserLimitMVC.DAL.csproj">
       <Project>{b7a28da6-7b62-453e-87fb-abf5b3aba548}</Project>
       <Name>UserLimitMVC.DAL</Name>

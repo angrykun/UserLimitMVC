@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UserLimitMVC.Common\UserLimitMVC.Common.csproj">
+      <Project>{7a5a3447-c096-48dd-8a9f-b4b7c2395e8f}</Project>
+      <Name>UserLimitMVC.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserLimitMVC.Model\UserLimitMVC.Model.csproj">
       <Project>{4e5a93e1-a876-46e5-8904-c628f7b65dd8}</Project>
       <Name>UserLimitMVC.Model</Name>

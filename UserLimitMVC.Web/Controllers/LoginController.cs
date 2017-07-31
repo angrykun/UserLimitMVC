@@ -36,14 +36,30 @@ namespace UserLimitMVC.Web.Controllers
             }
 
             var loginUserInfo = _userInfoService.CheckUserInfo(userINfo);
-            if (loginUserInfo == null)
+            string userInfoError = string.Empty;
+            switch (loginUserInfo)
             {
-                return Content("用户名或密码错误");
+                case LoginResult.PwdError:
+                    userInfoError = "密码输入错误";
+                    break;
+                case LoginResult.PwdIsNull:
+                    userInfoError = "密码不能为空";
+                    break;
+                case LoginResult.UserIsNull:
+                    userInfoError = "用户名不能为空";
+                    break;
+                case LoginResult.UserNotExist:
+                    userInfoError = "用户不存在";
+                    break;
+                case LoginResult.OK:
+                    userInfoError = "OK";
+                    break;
+                default:
+                    userInfoError = "未知错误,请检查您的数据库";
+                    break;
+
             }
-            else
-            {
-                return Content("OK");
-            }
+            return Content(userInfoError);
         }
 
         #region 生成验证码

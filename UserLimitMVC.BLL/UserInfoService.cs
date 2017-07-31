@@ -7,6 +7,7 @@ using UserLimitMVC.Model.User;
 using UserLimitMVC.DAL;
 using UserLimitMVC.IDAL;
 using UserLimitMVC.IBLL;
+using UserLimitMVC.Common;
 
 namespace UserLimitMVC.BLL
 {
@@ -23,9 +24,31 @@ namespace UserLimitMVC.BLL
         }
 
         //校验用户
-        public UserInfo CheckUserInfo(UserInfo userINfo)
+        public LoginResult CheckUserInfo(UserInfo userInfo)
         {
-            return _DbSession.UserInfoRepository.LoadEntities(u => u.UName == userINfo.UName && u.Pwd == userINfo.Pwd).FirstOrDefault();
+            if (string.IsNullOrEmpty(userInfo.UName))
+            {
+                return LoginResult.UserIsNull;
+            }
+
+            if (string.IsNullOrEmpty(userInfo.Pwd))
+            {
+                return LoginResult.PwdIsNull;
+            }
+            var LoginUserInfoCheck = _DbSession.UserInfoRepository.LoadEntities(u => u.UName == userInfo.UName && u.Pwd == userInfo.Pwd).FirstOrDefault();
+
+            if (LoginUserInfoCheck == null)
+            {
+                return LoginResult.UserIsNull;
+            }
+            else if (LoginUserInfoCheck.Pwd != userInfo.Pwd)
+            {
+                return LoginResult.PwdError;
+            }
+            else
+            {
+                return LoginResult.OK;
+            }
         }
     }
 }
