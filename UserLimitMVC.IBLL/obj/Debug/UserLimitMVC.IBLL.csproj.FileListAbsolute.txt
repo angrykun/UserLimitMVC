@@ -8,3 +8,8 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\bin\Debug\zh-Hans\EntityFramework.r
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.csprojResolveAssemblyReference.cache
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.IBLL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.IBLL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.csprojResolveAssemblyReference.cache
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IBLL\obj\Debug\UserLimitMVC.IBLL.pdb

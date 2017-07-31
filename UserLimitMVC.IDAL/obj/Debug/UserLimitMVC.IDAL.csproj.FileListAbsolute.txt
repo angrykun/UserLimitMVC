@@ -12,3 +12,9 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\bin\Debug\zh-Hans\EntityFramework.S
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.csprojResolveAssemblyReference.cache
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.IDAL.dll.config
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.IDAL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.IDAL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.csprojResolveAssemblyReference.cache
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.IDAL\obj\Debug\UserLimitMVC.IDAL.pdb

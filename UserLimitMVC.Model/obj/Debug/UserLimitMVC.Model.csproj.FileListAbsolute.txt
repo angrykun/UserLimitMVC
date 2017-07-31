@@ -9,3 +9,17 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.pdb
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\UserLimitMVC.Model.dll.config
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\UserLimitMVC.Model.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\UserLimitMVC.Model.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.xml
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Model\obj\Debug\UserLimitMVC.Model.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.Model.dll.config
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.Model.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.Model.pdb

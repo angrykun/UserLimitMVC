@@ -14,3 +14,8 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\EntityFramework.xml
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.csprojResolveAssemblyReference.cache
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.BLL\obj\Debug\UserLimitMVC.BLL.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.BLL.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.BLL.pdb

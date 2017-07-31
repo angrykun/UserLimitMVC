@@ -3,3 +3,10 @@ D:\ProjectGit\UserLimitMVC\UserLimitMVC.Common\bin\Debug\UserLimitMVC.Common.pdb
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.dll
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.pdb
 D:\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.csprojResolveAssemblyReference.cache
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Common\bin\Debug\UserLimitMVC.Common.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Common\bin\Debug\UserLimitMVC.Common.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.csprojResolveAssemblyReference.cache
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\UserLimitMVC.Common\obj\Debug\UserLimitMVC.Common.pdb
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.Common.dll
+E:\AMyProject\ProjectGit\UserLimitMVC\Lib\UserLimitMVC.Common.pdb

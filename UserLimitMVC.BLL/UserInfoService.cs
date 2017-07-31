@@ -18,7 +18,8 @@ namespace UserLimitMVC.BLL
     {
         //重写抽象方法，设置当前仓储为UserInfo
         public override void SetCurrentRepostory()
-        {
+        {                               
+
             //设置当前仓储为UserInfo仓储
             CurrentRepository = DAL.RepositoryFactory.UserRepository;
         }

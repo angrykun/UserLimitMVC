@@ -64,6 +64,22 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UserLimitMVC.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\UserLimitMVC.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="UserLimitMVC.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\UserLimitMVC.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UserLimitMVC.IBLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\UserLimitMVC.IBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="UserLimitMVC.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\UserLimitMVC.Model.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -486,24 +502,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UserLimitMVC.BLL\UserLimitMVC.BLL.csproj">
-      <Project>{a069570e-ce72-48cf-8cfc-6ba7efb276ee}</Project>
-      <Name>UserLimitMVC.BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserLimitMVC.Common\UserLimitMVC.Common.csproj">
-      <Project>{7a5a3447-c096-48dd-8a9f-b4b7c2395e8f}</Project>
-      <Name>UserLimitMVC.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserLimitMVC.IBLL\UserLimitMVC.IBLL.csproj">
-      <Project>{4bab507d-9424-4e4b-a8eb-c0a64ce6a748}</Project>
-      <Name>UserLimitMVC.IBLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserLimitMVC.Model\UserLimitMVC.Model.csproj">
-      <Project>{4e5a93e1-a876-46e5-8904-c628f7b65dd8}</Project>
-      <Name>UserLimitMVC.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
