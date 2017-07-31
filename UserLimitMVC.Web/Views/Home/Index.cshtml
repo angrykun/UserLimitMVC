@@ -16,13 +16,13 @@
 </head>
 <body class="easyui-layout">
     @* North *@
-    <div data-options="region:'north',border:false" title="权限管理系统" style="height:90px;">
-        <div class="easyui-layout" data-options="fit:true" title="North" style="height:100%;">
-            <div data-options="region:'center',splot:'true'">
-                <h1>权限管理系统 @@MVC权限系统</h1>
+    <div data-options="region:'north'" title="权限管理系统" style="height:90px;">
+        <div class="easyui-layout" data-options="fit:true,borde:false" title="North" style="height:100%;">
+            <div data-options="region:'center',splot:'true',border:false" style="width:45%; text-align:center;height:100%">
+                <h2>@*权限管理系统 @@MVC权限系统*@</h2>
             </div>
-            <div data-options="region:'east',split:'true'">
-                欢迎管理员 @ViewBag.UName 登录权限管理后台
+            <div data-options="region:'east',split:'true',border:false" style="width:55%;">
+                <p>欢迎管理员 @ViewBag.UName 登录权限管理后台</p>
                 当前时间：@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                 <a href="#">注销</a>
             </div>
@@ -30,45 +30,36 @@
     </div>
 
     @* West *@
-    <div data-options="region:'west',split:true,title:'West'" style="width:150px;">
+    <div data-options="region:'west',split:true,title:'菜单导航'" style="width:150px;padding:1px;overflow:hidden;">
         <div class="easyui-accordion" data-options="fit:true,border:false">
-            <div title="Title1">
-                content1
+            <div title="后台用户管理" data-options="selected:true" iconCls="icon-edit" style="padding:10px;overflow:hidden;">
+                <p><a href="javascript:void(0);">用户管理</a></p>
+                <p><a href="javascript:void(0);">角色管理</a></p>
+                <p><a href="javascript:void(0);">权限管理</a></p>
             </div>
-            <div title="Title2" data-options="selected:true" style="padding:10px;">
+            <div title="网站广告管理" data-options="iconCls:'icon-edit'" style="padding:10px">
                 content2
             </div>
-            <div title="Title3" style="padding:10px">
+            <div title="网站新闻管理" data-options="iconCls:'icon-edit'" style="padding:10px">
                 content3
             </div>
         </div>
     </div>
-
+    @* Center *@
+    <div data-options="region:'center',title:'网站首页>用户管理>用户列表'" style="overflow:hidden">
+        center content
+    </div>
     @* East *@
-    <div data-options="region:'east',split:true,collapsed:true,title:'East',iconCls:'icon-refresh'" style="width:100px;">
-        <ul class="easyui-tree" data-options="url:'tree_data1.json',method:'get',animate:true,dnd:true"></ul>
+    <div data-options="region:'east',split:true,collapsed:true,title:'日历信息'" style="width:235px;">
+        <div class="easyui-calendar" style="width:230px;height:230px"></div>
     </div>
     @* South *@
-    <div data-options="region:'south',border:false" style="height:50px;padding:10px;">south region</div>
-    @* Center *@
-    <div data-options="region:'center',title:'Center'">
-        <div class="easyui-tabs" data-options="fit:true,border:false,plain:true">
-            <div title="About" data-options="href:'_content.html'" style="padding:10px"></div>
-            <div title="DataGrid" style="padding:5px">
-                <table class="easyui-datagrid"
-                       data-options="url:'datagrid_data1.json',method:'get',singleSelect:true,fit:true,fitColumns:true">
-                    <thead>
-                        <tr>
-                            <th data-options="field:'itemid'" width="80">Item ID</th>
-                            <th data-options="field:'productid'" width="100">Product ID</th>
-                            <th data-options="field:'listprice',align:'right'" width="80">List Price</th>
-                            <th data-options="field:'unitcost',align:'right'" width="80">Unit Cost</th>
-                            <th data-options="field:'attr1'" width="150">Attribute</th>
-                            <th data-options="field:'status',align:'center'" width="50">Status</th>
-                        </tr>
-                    </thead>
-                </table>
+    <div data-options="region:'south',border:false,title:'MVC权限系统Footer',border:false" style="height:60px;">
+        <div class="easyui-layout" data-options="fit:true,border:false" style="background:#ccc;">
+            <div data-options="region:'center',border:false" style="text-align:center;height:100%">
+                版权所有： XXX
             </div>
+            south region
         </div>
     </div>
 </body>
